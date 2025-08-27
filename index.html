@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry Service - Hero Section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      height: 60px;
+      background-color: #2b2d42;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar .user {
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      height: calc(100vh - 60px); /* 100% minus navbar */
+      width: 100vw;
+    }
+
+    .hero-left, .hero-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .hero-left {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #edf2f4;
+    }
+
+    .hero-left h1 {
+      font-size: 3.5vw;
+      margin-bottom: 20px;
+      color: #2b2d42;
+    }
+
+    .hero-left p {
+      font-size: 1.2vw;
+      margin-bottom: 30px;
+      color: #555;
+      max-width: 90%;
+    }
+
+    .hero-left button {
+      padding: 15px 25px;
+      background-color: #2b2d42;
+      color: white;
+      border: none;
+      font-size: 1vw;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .hero-left button:hover {
+      background-color: #1d1f30;
+    }
+
+    .hero-right img {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-left, .hero-right {
+        padding: 20px;
+      }
+
+      .hero-left h1 {
+        font-size: 6vw;
+      }
+
+      .hero-left p {
+        font-size: 3.5vw;
+      }
+
+      .hero-left button {
+        font-size: 3vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">LaundryMart</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="user">Hello, User!</div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <!-- Left -->
+    <div class="hero-left">
+      <h1>Clean Clothes, Happy You</h1>
+      <p>We provide fast, affordable, and professional laundry services right at your doorstep. Book now and enjoy hassle-free laundry with LaundryMart.</p>
+      <button>Book a Service Today</button>
+    </div>
+
+    <!-- Right -->
+    <div class="hero-right">
+      <img src="images.png" alt="Laundry Service">
+    </div>
+  </div>
+
+</body>
+</html>
